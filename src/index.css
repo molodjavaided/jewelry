@@ -1,0 +1,44 @@
+:root {
+  --font-family: "Geometria", sans-serif;
+  --second-family: "Gerbera", sans-serif;
+  --transition-speed: 0.4s;
+  --gold-color: #D4AF37;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 70px;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Добавлен золотой цвет */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+  font-family: var(--font-family);
+  background: black;
+  background-size: cover;
+  color: white;
+  transition: opacity 0.5s ease;
+}
+
+
+
+/* .content {
+  position: relative;
+  z-index: 2;
+} */

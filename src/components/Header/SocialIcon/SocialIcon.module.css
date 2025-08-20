@@ -1,0 +1,21 @@
+.social-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-speed) ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon svg {
+    transition: all var(--transition-speed) ease;
+}
+
+.social-icon:hover svg {
+    filter: brightness(0) sepia(1) saturate(5) hue-rotate(30deg);
+}

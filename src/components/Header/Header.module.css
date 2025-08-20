@@ -1,0 +1,30 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: transparent;
+    padding: 42px 0px;
+    will-change: transform;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}

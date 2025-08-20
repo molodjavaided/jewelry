@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    height: 34px;
+    width: auto;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    transition: filter var(--transition-speed) ease;
+}
+
+.logo:hover .logo-img {
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(30deg);
+}

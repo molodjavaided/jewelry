@@ -1,0 +1,17 @@
+.button-catalog {
+    border-radius: 10px;
+    border: none;
+    padding: 15px 63px;
+    width: 208px;
+    height: 55px;
+    backdrop-filter: blur(4px);
+    background: linear-gradient(90deg, rgba(166, 166, 166, 0.46) 0%, rgba(64, 64, 64, 0.46) 100%);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+.button-catalog:hover {
+    background: rgba(166, 166, 166, 0.46);
+}
