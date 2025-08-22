@@ -6,32 +6,46 @@ import style from "./MainPage.module.css";
 import Container from "../Container/Container";
 import ButtonCatalog from "../Buttons/ButtonCatalog/ButtonCatalog";
 import ButtonDesign from "../Buttons/ButtonDesign/ButtonDesign";
-import SliderCatalog from "../SliderCatalog/SliderCatalog";
+import MultipleItems from "../SliderCatalog/MultipleItems";
+import CurrentPositions from "./currentPositions/currentPositions";
+import BrandInfo from "./BrandInfo/BrandInfo";
+import BrandInfoVideo from "../BrandInfoVideo/BrandInfoVideo";
 
 function MainPage() {
   return (
     <>
       <Header />
       <main>
-        <VideoBackground />
-        <Container>
-          <NameStudioAnimation />
-          <div className={style["wrapper-text"]}>
-            <p className={`${style.text} ${style.top}`}>
-              Создаем уникальные изделия под заказ
-            </p>
-            <p className={`${style.text} ${style.bottom}`}>
-              Воплоти мечту в реальность
-            </p>
+        <section className={style["section-main"]}>
+          <VideoBackground />
+          <Container>
+            <NameStudioAnimation />
+            <div className={style["wrapper-text"]}>
+              <p className={`${style.text} ${style.top}`}>
+                Создаем уникальные изделия под заказ
+              </p>
+              <p className={`${style.text} ${style.bottom}`}>
+                Воплоти мечту в реальность
+              </p>
+            </div>
+            <div className={style.buttons}>
+              <ButtonCatalog />
+              <ButtonDesign />
+            </div>
+          </Container>
+        </section>
+        <section className={style["section-catalog"]}>
+          <div className={style["container-catalog container"]}>
+            <MultipleItems />
           </div>
-          <div className={style.buttons}>
-            <ButtonCatalog />
-            <ButtonDesign />
-          </div>
-        </Container>
-        <Container>
-          <SliderCatalog />
-        </Container>
+        </section>
+        <section className={style["section-currentPositions"]}>
+          <CurrentPositions />
+        </section>
+        <section className={style["section-brandInfo"]}>
+          <BrandInfo />
+          <BrandInfoVideo />
+        </section>
       </main>
     </>
   );

@@ -5,8 +5,9 @@
     font-weight: 500;
     font-family: var(--second-family);
     transition: color var(--transition-speed) ease;
+    opacity: 0.66;
 }
 
 .nav-menu__item:hover {
-    color: var(--gold-color);
+    opacity: 1;
 }

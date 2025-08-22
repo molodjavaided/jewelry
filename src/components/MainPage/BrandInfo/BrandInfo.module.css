@@ -1,0 +1,36 @@
+.container-brandInfo {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 70px;
+    z-index: 2;
+    position: relative;
+}
+
+.brandInfo-text {
+    max-width: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.button-brandInfo {
+    border-radius: 10px;
+    border: none;
+    padding: 15px 63px;
+    width: 301px;
+    height: 55px;
+    backdrop-filter: blur(4px);
+    background: linear-gradient(90deg, rgba(166, 166, 166, 0.11) 0%, rgba(64, 64, 64, 0.11) 100%);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-brandInfo:hover {
+    backdrop-filter: blur(4px);
+    background: rgba(166, 166, 166, 0.11);
+}
