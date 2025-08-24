@@ -9,7 +9,7 @@
     /* например, половина экрана */
     border-radius: 20px 0 0 20px;
     overflow: hidden;
-    z-index: 3;
+    z-index: 2;
 }
 
 .brandInfo-video {
@@ -29,5 +29,5 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    z-index: 2;
+    z-index: 1;
 }

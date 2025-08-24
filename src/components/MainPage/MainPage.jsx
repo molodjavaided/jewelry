@@ -10,6 +10,8 @@ import MultipleItems from "../SliderCatalog/MultipleItems";
 import CurrentPositions from "./currentPositions/currentPositions";
 import BrandInfo from "./BrandInfo/BrandInfo";
 import BrandInfoVideo from "../BrandInfoVideo/BrandInfoVideo";
+import CustomJewelry from "./CustomJewelry/CustomJewelry";
+import bkForm from "../../image/background/background-form.png";
 
 function MainPage() {
   return (
@@ -45,6 +47,10 @@ function MainPage() {
         <section className={style["section-brandInfo"]}>
           <BrandInfo />
           <BrandInfoVideo />
+        </section>
+        <section className={style["section-customJewelry"]}>
+          <CustomJewelry />
+          <img src={bkForm} alt="jewelry" className={style.background} />
         </section>
       </main>
     </>
